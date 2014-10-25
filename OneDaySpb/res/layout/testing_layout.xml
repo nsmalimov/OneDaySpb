@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/testBackgroundLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:useLevel="false" >
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Пройдите тест"
+        android:textColor="#ccfdfdfd"
+        android:textSize="40sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/buttonGood"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answerTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="Нравится"
+        android:textColor="#ccfdfdfd"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/buttonMaybe"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGood"
+        android:layout_centerInParent="true"
+        android:text="Нейтрально"
+        android:textColor="#ccfdfdfd"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/buttonBad"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonMaybe"
+        android:layout_centerInParent="true"
+        android:text="Не нравится"
+        android:textColor="#ccfdfdfd"
+        android:textSize="30dp" />
+
+</RelativeLayout>

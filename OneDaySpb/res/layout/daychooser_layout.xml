@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurred_background" >
+
+    <TextView
+        android:id="@+id/yourDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Ваш день в СПБ"
+        android:textColor="#ccfdfdfd"
+        android:gravity="center"
+        android:textSize="50sp" />
+    
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/arriveTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Когда вы приезжаете?"
+        android:textColor="#ccfdfdfd"
+        android:gravity="center"
+        android:textSize="50sp" />
+    
+     <TextView
+        android:visibility="gone"
+        android:id="@+id/leaveTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Когда вы уезжаете?"
+        android:textColor="#ccfdfdfd"
+        android:gravity="center"
+        android:textSize="50sp" />
+     
+     <ImageView
+        android:visibility="gone"
+        android:id="@+id/ok_logo"
+        android:src="@drawable/ok256x256"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    
+    
+    
+    <ImageView
+        android:id="@+id/spb_logo"
+        android:src="@drawable/anchor96x96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/yourDayText"/>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/clock_logo"
+        android:src="@drawable/clock96x96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/arriveTimeText"/>
+    
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/leave_logo"
+        android:src="@drawable/leave96x96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/leaveTimeText"/>
+    
+    <antistatic.spinnerwheel.WheelVerticalView
+            android:id="@+id/dayWheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/spb_logo"
+            android:layout_marginTop="50dp"
+            app:visibleItems="4" />
+    
+    <antistatic.spinnerwheel.WheelVerticalView
+            android:id="@+id/monthWheel"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@+id/dayWheel"
+            android:layout_alignTop="@+id/dayWheel"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/spb_logo"
+            app:visibleItems="4" />
+    
+    <antistatic.spinnerwheel.WheelVerticalView
+        	android:visibility="gone"
+            android:id="@+id/arriveTimeHourWheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/clock_logo"
+            android:layout_marginTop="50dp"
+            app:visibleItems="4" />
+    
+    <antistatic.spinnerwheel.WheelVerticalView
+        	android:visibility="gone"
+            android:id="@+id/arriveTimeMinuteWheel"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@+id/arriveTimeHourWheel"
+            android:layout_alignTop="@+id/arriveTimeHourWheel"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/clock_logo"
+            app:visibleItems="4" />
+    
+    <antistatic.spinnerwheel.WheelVerticalView
+        	android:visibility="gone"
+            android:id="@+id/leaveTimeHourWheel"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/leave_logo"
+            android:layout_marginTop="50dp"
+            app:visibleItems="4" />
+    
+    <antistatic.spinnerwheel.WheelVerticalView
+        	android:visibility="gone"
+            android:id="@+id/leaveTimeMinuteWheel"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@+id/leaveTimeHourWheel"
+            android:layout_alignTop="@+id/leaveTimeHourWheel"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/leave_logo"
+            app:visibleItems="4" />
+    
+    
+    
+        
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/color_azure_button"
+        android:text="Далее"
+        android:textColor="#ccfdfdfd"
+        />
+    
+    
+    <Button
+        android:visibility="gone"
+        android:id="@+id/resultButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/color_azure_button"
+        android:text="Результат"
+        android:textColor="#ccfdfdfd"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="light_red" type="color">#F65A5B</item>
+    <item name="bright_red" type="color">#FF4646</item>
+    <item name="saturated_red" type="color">#C0392B</item>
+    <item name="darkblue" type="color">#313742</item>
+    <item name="gray" type="color">#666666</item>
+    <item name="light_gray" type="color">#a8a8a8</item>
+    <item name="azure" type="color">#1ABC9C</item>
+    <item name="transparent_azure" type="color">#1ABC9C</item>
+    <item name="white" type="color">#fdfdfd</item>
+    <item name="transparent_white" type="color">#ccfdfdfd</item>
+    <item name="transparent_gray" type="color">#cc545454</item>
+    <item name="dark_azure" type="color">#16A085</item>
+    <item name="light_green" type="color">#4D2ECC71</item>
+    <item name="dark_green" type="color">#27AE60</item>
+</resources>

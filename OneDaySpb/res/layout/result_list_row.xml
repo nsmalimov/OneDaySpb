@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/resultlist_ElementView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/transparent_azure"
+        android:clickable="false" >
+
+        <ImageView
+            android:id="@+id/resultlist_ElementImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/resultlist_ElementTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/resultlist_ElementImage"
+            android:clickable="false"
+            android:text="10:00-12:00"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:clickable="false"
+            android:src="@drawable/arrow_down48x48" />
+    </RelativeLayout>
+
+    <graphic.expand_graphic.ExpandingLayout
+        android:id="@+id/expanding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/museum"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/resultlist_fullEventInfoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="70dp"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+      			android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:background="@color/transparent_gray" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/transparent_gray" >
+                
+                <ImageView
+                    android:id="@+id/address_logo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:padding="5dp"
+                    android:src="@drawable/address48x48"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/address_logo"
+                    android:layout_centerVertical="true"
+                    android:text="Адрес"/>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </graphic.expand_graphic.ExpandingLayout>
+
+</LinearLayout>
