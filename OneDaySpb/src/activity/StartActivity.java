@@ -7,7 +7,6 @@ import logic.Attraction;
 import logic.ServerConnection;
 import constant.Constants;
 
-import adapter.ResultAdapter;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -15,6 +14,7 @@ import android.support.v4.app.FragmentTransaction;
 import com.example.onedayspb.R;
 
 import fragments.DaychooserFragment;
+import fragments.MapFragment;
 import fragments.ResultFragment;
 import fragments.StartFragment;
 import fragments.TestingFragment;
@@ -35,8 +35,11 @@ public class StartActivity extends FragmentActivity {
 	private Fragment currentFragment;
 	private Fragment startFragment;
 	private Fragment testingFragment;
-	private Fragment resultFragment;
 	private Fragment daychooserFragment;
+	private Fragment resultFragment;
+	private Fragment mapFragment;
+	private Fragment descriptionFragment;
+	
 
 	private Handler handler;
 
@@ -54,6 +57,8 @@ public class StartActivity extends FragmentActivity {
 		testingFragment = new TestingFragment(resultTest_sb);
 		daychooserFragment = new DaychooserFragment(data_sb);
 		resultFragment = new ResultFragment();
+		mapFragment = new MapFragment();
+		
 
 		currentFragment = resultFragment;
 
@@ -62,7 +67,8 @@ public class StartActivity extends FragmentActivity {
 //		.add(R.id.content_frame, startFragment)
 //		.add(R.id.content_frame, testingFragment)
 //		.add(R.id.content_frame, daychooserFragment)
-		.add(R.id.content_frame, resultFragment)
+//		.add(R.id.content_frame, resultFragment)
+		.add(R.id.content_frame, mapFragment)
 //		.hide(testingFragment)
 //		.hide(daychooserFragment)
 //		.hide(resultFragment)

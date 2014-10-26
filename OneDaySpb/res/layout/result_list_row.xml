@@ -58,37 +58,107 @@
                 android:id="@+id/resultlist_fullEventInfoView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="70dp"
                 android:layout_alignParentTop="true"
+                android:background="@color/transparent_gray"
+                android:gravity="center"
+                android:minHeight="70dp"
                 android:padding="5dp"
-      			android:gravity="center"
                 android:textColor="@color/white"
                 android:textSize="24sp"
-                android:background="@color/transparent_gray" />
-            
+                android:clickable="false" />
+
             <RelativeLayout
+                android:id="@+id/book_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
+                android:layout_above="@+id/address_layout"
+                android:layout_marginBottom="5dp"
+                android:background="@color/transparent_gray"
+                android:clickable="false" >
+
+                <ImageView
+                    android:id="@+id/book_logo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/book48x48"
+                    android:clickable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/book_logo"
+                    android:text="Полезное"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:clickable="true" />
+
+                <RelativeLayout
+                    android:id="@+id/book_arrow_right"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:padding="5dp"
+                        android:src="@drawable/arrow_right48x48" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_alignParentBottom="true"
-                android:background="@color/transparent_gray" >
-                
+                android:background="@color/transparent_gray"
+                android:clickable="false" >
+
                 <ImageView
                     android:id="@+id/address_logo"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
                     android:padding="5dp"
-                    android:src="@drawable/address48x48"/>
-                
+                    android:src="@drawable/address48x48"
+                    android:clickable="true" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/address_logo"
                     android:layout_centerVertical="true"
-                    android:text="Адрес"/>
-                
+                    android:layout_toRightOf="@+id/address_logo"
+                    android:text="Адрес"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:clickable="true" />
+
+                <RelativeLayout
+                    android:id="@+id/address_arrow_right"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:padding="5dp"
+                        android:src="@drawable/arrow_right48x48" />
+                </RelativeLayout>
             </RelativeLayout>
-            
         </RelativeLayout>
     </graphic.expand_graphic.ExpandingLayout>
 

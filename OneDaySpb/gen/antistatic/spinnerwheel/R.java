@@ -22,9 +22,9 @@ public final class R {
 		public static final int visibleItems = 0x7f010000;
 	}
 	public static final class drawable {
-		public static final int wheel_bg_hor = 0x7f020070;
-		public static final int wheel_bg_ver = 0x7f020071;
-		public static final int wheel_val = 0x7f020072;
+		public static final int wheel_bg_hor = 0x7f020076;
+		public static final int wheel_bg_ver = 0x7f020077;
+		public static final int wheel_val = 0x7f020078;
 	}
 	public static final class styleable {
 		public static final int[] AbstractWheelView = { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008 };
